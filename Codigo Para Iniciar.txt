@@ -1,0 +1,2 @@
+cd C:\Users\Mile\source\repos\PNSC
+streamlit run PNSC.py
