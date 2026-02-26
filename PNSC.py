@@ -16,7 +16,7 @@ import pandas as pd
 import altair as alt
 from sqlalchemy import create_engine, text
 from datetime import datetime
-import pestaña_busqueda as pb  # Importación del archivo externo
+import pestana_busqueda as pb  # Importación del archivo externo
 
 # --- FUNCIONES DE FORMATO REGIONAL (Miles: . | Decimales: ,) ---
 def formato_entero(valor):
@@ -230,4 +230,5 @@ with tabs[3]:
 # --- TAB 5: BUSCADOR (ARCHIVO EXTERNO) ---
 with tabs[4]:
     # Llama a la función del archivo externo pasando las variables necesarias
-    pb.renderizar_nueva_pestaña(engine, tabla_name, formato_entero)
+
+    pb.renderizar_nueva_pestana(engine, tabla_name, formato_entero)
