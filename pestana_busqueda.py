@@ -11,7 +11,7 @@ def normalizar_texto(texto):
                   if unicodedata.category(c) != 'Mn')
     return texto
 
-def renderizar_nueva_pestaña(engine, tabla_name, formato_entero):
+def renderizar_nueva_pestana(engine, tabla_name, formato_entero):
     st.subheader("🔭 Resumen por Áreas Temáticas (Normalizado)")
     st.info("Este análisis agrupa las categorías ignorando mayúsculas, minúsculas y acentos.")
 
@@ -80,3 +80,4 @@ def renderizar_nueva_pestaña(engine, tabla_name, formato_entero):
 
     except Exception as e:
         st.error(f"Error en el procesamiento de datos: {e}")
+
